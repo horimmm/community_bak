@@ -1,0 +1,12 @@
+<%= form_tag(commu_search_form_path,method: :get) do %>
+  <%=text_field :commu,:title %>
+  <%=submit_tag("検索")%>
+<% end %>
+
+<% @commus %>
+<%binding.pry %>
+<%if @commus %>
+  <% @commus.each do |commu| %>
+    <%=link_to(commu.title,"/commu/#{commu.id}")%>
+  <% end %>
+<%end%>

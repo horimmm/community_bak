@@ -1,0 +1,13 @@
+<header class="header">
+      <nav class="nav">
+        <ul class="header_menu">
+          <li class="header_menu_title"><%=link_to "community",root_path,class:"nav-link" %></li>
+          <li>
+            <ul class="header_menu_inner">
+              <li><%=link_to "ログアウト", destroy_user_session_path, class: "nav-link", method: :delete%></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </header>

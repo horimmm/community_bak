@@ -1,0 +1,15 @@
+.userImgPreview {
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+  &.is-active {
+    display: block;
+  }
+  &_content {
+    max-width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: solid thin lightgray;
+    border-radius: 5px;
+  }
+}
